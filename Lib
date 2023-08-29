@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto para Fala</title>
+</head>
+<body>
+    <h1>Texto para Fala em Português</h1>
+    <textarea id="texto" rows="4" cols="50">Digite o texto aqui...</textarea>
+    <br>
+    <button id="playPauseButton" onclick="togglePlayPause()">
+        <span class="" id="playIcon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#EF6C00" fill-opacity="0.1"/>
+                <path d="M18.1027 24C17.8521 24 17.6438 23.9179 17.478 23.7536C17.3121 23.5893 17.2292 23.3857 17.2292 23.1429C17.2292 23.0286 17.2505 22.9134 17.293 22.7973C17.3356 22.6812 17.3924 22.5869 17.4633 22.5143C18.3219 21.6762 18.9999 20.7 19.4975 19.5857C19.995 18.4714 20.2438 17.2762 20.2438 16C20.2438 14.7202 19.995 13.524 19.4975 12.4115C18.9999 11.2991 18.3219 10.3238 17.4633 9.48571C17.3924 9.41326 17.3356 9.31906 17.293 9.20311C17.2505 9.08717 17.2292 8.97123 17.2292 8.85529C17.2292 8.6089 17.3133 8.40476 17.4816 8.24286C17.6499 8.08095 17.8585 8 18.1072 8C18.2243 8 18.3377 8.025 18.4475 8.075C18.5572 8.125 18.6487 8.18571 18.7219 8.25714C19.7365 9.24762 20.5365 10.4048 21.1219 11.7286C21.7072 13.0524 21.9999 14.4715 21.9999 15.986C21.9999 17.5191 21.7072 18.9476 21.1219 20.2714C20.5365 21.5952 19.7365 22.7524 18.7219 23.7429C18.6482 23.8143 18.556 23.875 18.4455 23.925C18.3349 23.975 18.2206 24 18.1027 24ZM14.7706 20.7429C14.5218 20.7429 14.3133 20.6607 14.145 20.4964C13.9767 20.3321 13.8926 20.1286 13.8926 19.8857C13.8926 19.7714 13.9182 19.6607 13.9694 19.5536C14.0206 19.4464 14.0828 19.3571 14.156 19.2857C14.6048 18.8476 14.9511 18.3513 15.195 17.7966C15.4389 17.242 15.5609 16.642 15.5609 15.9966C15.5609 15.3513 15.4389 14.7524 15.195 14.2C14.9511 13.6476 14.6048 13.1524 14.156 12.7143C14.0779 12.6381 14.0145 12.5464 13.9657 12.4393C13.917 12.3321 13.8926 12.2214 13.8926 12.1071C13.8926 11.8643 13.9767 11.6619 14.145 11.5C14.3133 11.3381 14.5218 11.2571 14.7706 11.2571C14.9072 11.2571 15.0292 11.2762 15.1365 11.3143C15.2438 11.3524 15.3365 11.419 15.4145 11.5143C15.9999 12.0857 16.4633 12.7559 16.8048 13.5248C17.1463 14.2936 17.317 15.1175 17.317 15.9962C17.317 16.8749 17.1463 17.7 16.8048 18.4714C16.4633 19.2429 15.9999 19.9143 15.4145 20.4857C15.3365 20.581 15.2438 20.6476 15.1365 20.6857C15.0292 20.7238 14.9072 20.7429 14.7706 20.7429Z" fill="#EF6C00"/>
+                <path d="M10.7505 19.4287C10.5378 19.4287 10.3596 19.3693 10.2158 19.2505C10.0719 19.1318 10 18.9846 10 18.8091C10 18.7264 10.0219 18.6464 10.0657 18.569C10.1094 18.4915 10.1626 18.427 10.2251 18.3753C10.6087 18.0586 10.9047 17.6998 11.1132 17.2989C11.3217 16.898 11.4259 16.4642 11.4259 15.9977C11.4259 15.5311 11.3217 15.0982 11.1132 14.6989C10.9047 14.2996 10.6087 13.9416 10.2251 13.6249C10.1584 13.5698 10.1042 13.5035 10.0625 13.4261C10.0208 13.3486 10 13.2686 10 13.186C10 13.0104 10.0719 12.8641 10.2158 12.7471C10.3596 12.6301 10.5378 12.5715 10.7505 12.5715C10.8672 12.5715 10.9714 12.5853 11.0632 12.6128C11.1549 12.6404 11.2341 12.6886 11.3008 12.7574C11.8011 13.1705 12.1972 13.655 12.4891 14.2108C12.7809 14.7666 12.9268 15.3621 12.9268 15.9974C12.9268 16.6326 12.7809 17.229 12.4891 17.7867C12.1972 18.3443 11.8011 18.8297 11.3008 19.2428C11.2341 19.3116 11.1549 19.3598 11.0632 19.3874C10.9714 19.4149 10.8672 19.4287 10.7505 19.4287Z" fill="#EF6C00"/>
+            </svg>
+        </span>
+        <span class="hidden" id="pauseIcon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#EF6C00" fill-opacity="0.1"/>
+                <path d="M19.0599 21C18.9159 21 18.7869 20.9458 18.6731 20.8375C18.5592 20.7291 18.5023 20.6064 18.5023 20.4693V10.5307C18.5023 10.3936 18.5592 10.2709 18.6731 10.1625C18.7869 10.0542 18.9159 10 19.0599 10H21.4424C21.5864 10 21.7154 10.0542 21.8292 10.1625C21.9431 10.2709 22 10.3936 22 10.5307V20.4693C22 20.6064 21.9431 20.7291 21.8292 20.8375C21.7154 20.9458 21.5864 21 21.4424 21H19.0599ZM11.5576 21C11.4136 21 11.2846 20.9458 11.1708 20.8375C11.0569 20.7291 11 20.6064 11 20.4693V10.5307C11 10.3936 11.0569 10.2709 11.1708 10.1625C11.2846 10.0542 11.4136 10 11.5576 10H13.9654C14.0964 10 14.2221 10.0542 14.3425 10.1625C14.4628 10.2709 14.523 10.3936 14.523 10.5307V20.4693C14.523 20.6064 14.4628 20.7291 14.3425 20.8375C14.2221 20.9458 14.0964 21 13.9654 21H11.5576Z" fill="#EF6C00"/>
+            </svg>
+        </span>
+    </button>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+
+<script>
+    var synth = window.speechSynthesis;
+    var utterance;
+    var isPlaying = false;
+    var isPaused = false;
+    var playIcon = document.getElementById('playIcon');
+    var pauseIcon = document.getElementById('pauseIcon')
+
+    var synth = window.speechSynthesis;
+    var utterance;
+    var isPlaying = false;
+    var isPaused = false;
+    var playIcon = document.getElementById('playIcon');
+    var pauseIcon = document.getElementById('pauseIcon');
+
+    function toggleIcons() {
+        playIcon.classList.toggle('hidden');
+        pauseIcon.classList.toggle('hidden');
+    }
+
+    function togglePlayPause() {
+        if (isPlaying) {
+            if (isPaused) {
+                retomar();
+            } else {
+                pausar();
+            }
+        } else {
+            falar();
+        }
+    }
+
+    function falar() {
+        var texto = document.getElementById('texto').value;
+        utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-br'
+    }
+
+    var synth = window.speechSynthesis;
+    var utterance;
+    var isPlaying = false;
+    var isPaused = false;
+    var playIcon = document.getElementById('playIcon');
+    var pauseIcon = document.getElementById('pauseIcon');
+
+    function toggleIcons() {
+        playIcon.classList.toggle('hidden');
+        pauseIcon.classList.toggle('hidden');
+    }
+
+    function togglePlayPause() {
+        if (isPlaying) {
+            if (isPaused) {
+                retomar();
+            } else {
+                pausar();
+            }
+        } else {
+            falar();
+        }
+    }
+
+    function falar() {
+        var texto = document.getElementById('texto').value;
+        utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-Br'
+    }
+    var synth = window.speechSynthesis;
+    var utterance;
+    var isPlaying = false;
+    var isPaused = false;
+    var playIcon = document.getElementById('playIcon');
+    var pauseIcon = document.getElementById('pauseIcon');
+
+    function toggleIcons() {
+        playIcon.classList.toggle('hidden');
+        pauseIcon.classList.toggle('hidden');
+    }
+
+    function togglePlayPause() {
+        if (isPlaying) {
+            if (isPaused) {
+                retomar();
+            } else {
+                pausar();
+            }
+        } else {
+            falar();
+        }
+    }
+
+    function falar() {
+        var texto = document.getElementById('texto').value;
+        utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = ''
+    }
+
+    var synth = window.speechSynthesis;
+    var utterance;
+    var isPlaying = false;
+    var isPaused = false;
+    var playIcon = document.getElementById('playIcon');
+    var pauseIcon = document.getElementById('pauseIcon');
+
+    function toggleIcons() {
+        playIcon.classList.toggle('hidden');
+        pauseIcon.classList.toggle('hidden');
+    }
+
+    function togglePlayPause() {
+        if (isPlaying) {
+            if (isPaused) {
+                retomar();
+            } else {
+                pausar();
+            }
+        } else {
+            falar();
+        }
+    }
+
+    function falar() {
+        var texto = document.getElementById('texto').value;
+        utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-BR';
+        synth.speak(utterance);
+        isPlaying = true;
+        isPaused = false;
+        toggleIcons();
+
+        utterance.onend = function () {
+            isPlaying = false;
+            toggleIcons();
+        };
+    }
+
+    function pausar() {
+        synth.pause();
+        isPaused = true;
+        toggleIcons();
+    }
+
+    function retomar() {
+        synth.resume();
+        isPaused = false;
+        toggleIcons();
+    }
+</script>
+</body>
+</html>
